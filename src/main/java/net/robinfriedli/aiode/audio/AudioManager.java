@@ -99,7 +99,7 @@ public class AudioManager extends AbstractShutdownable {
         }
         playerManager.registerSourceManager(new YoutubeAudioSourceManager(
             youtubeSourceOptions,
-            new Music(), new AndroidMusic(), new AndroidVr(), new TvHtml5Simply(), new Tv(), new MWeb(), new Web(), new WebEmbedded()
+            new Music(), new AndroidMusic(), new AndroidVr(), new Ios(), new TvHtml5Simply(), new Tv(), new MWeb(), new Web(), new WebEmbedded()
         ));
         playerManager.registerSourceManager(SoundCloudAudioSourceManager.createDefault());
         playerManager.registerSourceManager(new BandcampAudioSourceManager());
